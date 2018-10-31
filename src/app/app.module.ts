@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
-import {RouterModule} from '@angular/router';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -39,10 +38,13 @@ import {
   CovalentStepsModule
 } from '@covalent/core';
 import {HttpClientModule} from '@angular/common/http';
+import {MDBBootstrapModule} from 'angular-bootstrap-md';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     // BrowserModule.withServerTransition({ appId: 'camiloruizcasanova' }),
@@ -52,7 +54,6 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    RouterModule.forRoot([]),
     HttpClientModule,
     /** Material Modules */
     MatButtonModule,
@@ -92,6 +93,8 @@ import {HttpClientModule} from '@angular/common/http';
     CovalentMenuModule,
     CovalentDataTableModule,
     CovalentMessageModule,
+
+    MDBBootstrapModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

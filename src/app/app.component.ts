@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
-import {TdMediaService} from '@covalent/core';
+import {TdMediaService, TdNavigationDrawerComponent} from '@covalent/core';
 import {MatIconRegistry} from '@angular/material';
 
 @Component({
@@ -9,6 +9,7 @@ import {MatIconRegistry} from '@angular/material';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  @ViewChild(TdNavigationDrawerComponent) drawer: TdNavigationDrawerComponent;
   name = 'Camilo Ruiz Casanova';
 
   constructor(public media: TdMediaService,
@@ -22,5 +23,9 @@ export class AppComponent {
     this._iconRegistry.addSvgIconInNamespace('assets', 'covalent-mark',
       this._domSanitizer.bypassSecurityTrustResourceUrl('https://raw.githubusercontent.com/Teradata/covalent-quickstart/develop/src/assets/icons/covalent-mark.svg'));
 
+  }
+
+  closeDrawer(): void {
+    this.drawer.close();
   }
 }
