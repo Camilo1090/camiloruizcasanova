@@ -118,14 +118,11 @@
       </div>
     </div>
   </div>
-  <div class="text-center push-top">
-    <button mat-raised-button color="accent" class="mat-button-lg text-upper">View All Openings</button>
-  </div>
 </section>
 
 <section id="resume" class="bgc-blue-grey-50">
-  <div layout-gt-xs="row">
-    <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xl']">
+  <div layout-gt-xs="row" flex-gt-xs="90">
+    <div flex-gt-xs="60" class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xl']">
       <div class="push-top-xl" hide-xs></div>
       <div tdMediaToggle="gt-sm" [mediaClasses]="['push-lg']">
         <h1 class="mat-display-1 tc-blue-A400 push-top-xs push-bottom-sm">Portfolio & Resume</h1>
@@ -138,27 +135,25 @@
       </div>
       <div class="push-bottom-xl" hide-xs></div>
     </div>
-    <div flex="40" class="push-xxl" layout="row" layout-align="center center">
+    <div flex-gt-xs="40" class="push-xxl" layout-margin layout-align="right">
       <!--<mat-icon class="push" style="height:auto;width:auto;" svgIcon="assets:covalent-mark"></mat-icon>-->
       <mat-card>
-          <mat-toolbar color="accent" class="bgc-cyan-A700 push-bottom">
-            <span class="text-upper">DevOps</span>
-          </mat-toolbar>
-          <mat-card-subtitle>Openings</mat-card-subtitle>
-          <mat-divider></mat-divider>
-          <mat-list>
-            <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
-              <mat-list-item>
-                <mat-icon mat-list-icon class="fill-grey-700">description</mat-icon>
-                <h4 matLine>DevOps Engineer</h4>
-              </mat-list-item>
-              <mat-divider mat-inset *ngIf="!last"></mat-divider>
-            </ng-template>
-          </mat-list>
-          <mat-divider></mat-divider>
-          <mat-card-actions>
-            <a mat-button color="accent" class="text-upper">View All</a>
-          </mat-card-actions>
+        <mat-toolbar color="accent" class="bgc-cyan-A700 push-bottom">
+          <span class="text-upper">Last Projects</span>
+        </mat-toolbar>
+        <mat-list>
+          <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
+            <mat-list-item>
+              <mat-icon mat-list-icon>description</mat-icon>
+              <h4 matLine>DevOps Engineer</h4>
+            </mat-list-item>
+            <mat-divider mat-inset *ngIf="!last"></mat-divider>
+          </ng-template>
+        </mat-list>
+        <mat-divider></mat-divider>
+        <mat-card-actions>
+          <a mat-button color="accent" class="text-upper">View All</a>
+        </mat-card-actions>
         <!-- <img mat-card-image src="assets/camilo.png" /> -->
       </mat-card>
     </div>
@@ -168,43 +163,43 @@
 <section id="contact" class="bgc-blue-grey-100" tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-xl', 'pad-bottom-xl']">
   <h2 class="mat-display-1 text-upper text-center push-bottom">Contact Me</h2>
   <div layout-gt-xs="row" layout-align-gt-xs="center center">
-    <div layout-gt-xs="row" flex-gt-xs="90" layout-margin>
-      <div flex-gt-xs="100">
+    <div layout-gt-xs="flex" flex-gt-xs="90" layout-flex>
+      <div flex-gt-xs="40">
         <mat-card>
+          <mat-card-header>
+            <mat-card-title>
+              <a href="mailto:camilo.ruiz.casanova@correounivalle.edu.co" target="_new">
+                <img mat-card-image src="/assets/email.png" width="100%" alt="Mail: camilo.ruiz.casanova@correounivalle.edu.co">
+              </a>
+            </mat-card-title>
+          </mat-card-header>
           <mat-card-content>
             <mat-list>
               <mat-list-item>
-                <mat-icon>mail</mat-icon>&nbsp;<a href="mailto:camilo.ruiz.casanova@correounivalle.edu.co" target="_new">camilo.ruiz.casanova@correounivalle.edu.co</a>
-              </mat-list-item>
-              <mat-list-item>
-                <mat-icon>github</mat-icon>&nbsp;<a href="" target="_new">camiloruizcasanova</a>
+                <span class="text-center">
+                  <a href="mailto:camilo.ruiz.casanova@correounivalle.edu.co" target="_new">camilo.ruiz.casanova@correounivalle.edu.co</a>
+                </span>
               </mat-list-item>
             </mat-list>
-            <p>
-              
-            </p>
           </mat-card-content>
-          <!-- <mat-toolbar color="accent" class="bgc-blue-A400 push-bottom">
-            <span class="text-upper">Frontend</span>
-          </mat-toolbar>
-          <mat-card-subtitle>Openings</mat-card-subtitle>
-          <mat-divider></mat-divider>
-          <mat-list>
-            <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
-              <mat-list-item>
-                <mat-icon mat-list-icon class="fill-grey-700">description</mat-icon>
-                <h4 matLine>Frontend Engineer</h4>
-              </mat-list-item>
-              <mat-divider mat-inset *ngIf="!last"></mat-divider>
-            </ng-template>
-          </mat-list>
-          <mat-divider></mat-divider>
-          <mat-card-actions>
-            <a mat-button color="accent" class="text-upper">View All</a>
-          </mat-card-actions> -->
         </mat-card>
       </div>
-
+      <div flex-gt-xs="40">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>
+              <img mat-card-image src="/assets/octocat.png" width="100%" alt="Github: Camilo1090">
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <mat-list>
+              <mat-list-item>
+                <a href="https://github.com/Camilo1090" target="_new">Camilo Ruiz Casanova</a>
+              </mat-list-item>
+            </mat-list>
+          </mat-card-content>
+        </mat-card>
+      </div>
       <!-- <div flex-gt-xs="25">
         <mat-card>
           <mat-toolbar color="accent" class="bgc-light-blue-A400 push-bottom">
