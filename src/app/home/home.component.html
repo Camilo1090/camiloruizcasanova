@@ -15,9 +15,7 @@
     </div>
     <div flex="40" class="push-xxl" layout="row" layout-align="center center">
       <!--<mat-icon class="push" style="height:auto;width:auto;" svgIcon="assets:covalent-mark"></mat-icon>-->
-      <mat-card>
-        <img mat-card-image src="assets/camilo.png" />
-      </mat-card>
+
     </div>
   </div>
 </section>
@@ -25,95 +23,46 @@
 <section id="about" class="bgc-blue-grey-100" tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-xl', 'pad-bottom-xl']">
   <h2 class="mat-display-1 text-upper text-center push-bottom">About Me</h2>
   <div layout-gt-xs="row" layout-align-gt-xs="center center">
-    <div layout-gt-xs="row" flex-gt-xs="90" layout-margin>
-      <div flex-gt-xs="25">
+    <div layout-gt-xs="row" layout-align="center center" flex-gt-xs="80" layout-margin>
+      <div flex>
         <mat-card>
-          <mat-toolbar color="accent" class="bgc-blue-A400 push-bottom">
-            <span class="text-upper">Frontend</span>
-          </mat-toolbar>
-          <mat-card-subtitle>Openings</mat-card-subtitle>
-          <mat-divider></mat-divider>
-          <mat-list>
-            <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
-              <mat-list-item>
-                <mat-icon mat-list-icon class="fill-grey-700">description</mat-icon>
-                <h4 matLine>Frontend Engineer</h4>
-              </mat-list-item>
-              <mat-divider mat-inset *ngIf="!last"></mat-divider>
-            </ng-template>
-          </mat-list>
-          <mat-divider></mat-divider>
-          <mat-card-actions>
-            <a mat-button color="accent" class="text-upper">View All</a>
-          </mat-card-actions>
+          <img mat-card-image alt="photo" src="assets/camilo.png" />
         </mat-card>
       </div>
-
-      <div flex-gt-xs="25">
+      <div flex="65">
         <mat-card>
-          <mat-toolbar color="accent" class="bgc-light-blue-A400 push-bottom">
-            <span class="text-upper">Backend</span>
-          </mat-toolbar>
-          <mat-card-subtitle>Openings</mat-card-subtitle>
-          <mat-divider></mat-divider>
-          <mat-list>
-            <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
-              <mat-list-item>
-                <mat-icon mat-list-icon class="fill-grey-700">description</mat-icon>
-                <h4 matLine>Backend Engineer</h4>
-              </mat-list-item>
-              <mat-divider mat-inset *ngIf="!last"></mat-divider>
-            </ng-template>
-          </mat-list>
-          <mat-divider></mat-divider>
-          <mat-card-actions>
-            <a mat-button color="accent" class="text-upper">View All</a>
-          </mat-card-actions>
-        </mat-card>
-      </div>
-
-      <div flex-gt-xs="25">
-        <mat-card>
-          <mat-toolbar color="accent" class="bgc-cyan-A700 push-bottom">
-            <span class="text-upper">DevOps</span>
-          </mat-toolbar>
-          <mat-card-subtitle>Openings</mat-card-subtitle>
-          <mat-divider></mat-divider>
-          <mat-list>
-            <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
-              <mat-list-item>
-                <mat-icon mat-list-icon class="fill-grey-700">description</mat-icon>
-                <h4 matLine>DevOps Engineer</h4>
-              </mat-list-item>
-              <mat-divider mat-inset *ngIf="!last"></mat-divider>
-            </ng-template>
-          </mat-list>
-          <mat-divider></mat-divider>
-          <mat-card-actions>
-            <a mat-button color="accent" class="text-upper">View All</a>
-          </mat-card-actions>
-        </mat-card>
-      </div>
-      <div flex-gt-xs="25">
-        <mat-card>
-          <mat-toolbar color="accent" class="bgc-teal-A700 push-bottom">
-            <span class="text-upper">Quality</span>
-          </mat-toolbar>
-          <mat-card-subtitle>Openings</mat-card-subtitle>
-          <mat-divider></mat-divider>
-          <mat-list>
-            <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
-              <mat-list-item>
-                <mat-icon mat-list-icon class="fill-grey-700">description</mat-icon>
-                <h4 matLine>Quality Engineer</h4>
-              </mat-list-item>
-              <mat-divider mat-inset *ngIf="!last"></mat-divider>
-            </ng-template>
-          </mat-list>
-          <mat-divider></mat-divider>
-          <mat-card-actions>
-            <a mat-button color="accent" class="text-upper">View All</a>
-          </mat-card-actions>
+          <!--<mat-toolbar color="accent" class="bgc-blue-A400 push-bottom">-->
+            <!--<span class="text-upper">Frontend</span>-->
+          <!--</mat-toolbar>-->
+          <!--<mat-card-subtitle>Openings</mat-card-subtitle>-->
+          <!--<mat-divider></mat-divider>-->
+          <mat-card-content layout="row" layout-align="center center" class="text-lg">
+            <span class="tc-black">
+              Hello there! I am a game developer who really likes games too, be it tabletop or digital,
+              cards or sports, I like to play and try all kinds of games.
+              <br><br>
+              I initially started my programming career because I really liked computers and I was
+              amazed by computer programs in general. I already liked video games and I thought about
+              becoming a game programmer but that wasn't my main objective by the time, I just wanted
+              to solve problems through code. Later in my last year of undergrad, I had the opportunity
+              to focus my degree project on video games. I, together with some other co-students,
+              developed a series of movement based mini games to assist physical rehabilitation
+              therapies from a local hospital in our city. The objective was to motivate patients to
+              perform their therapies, as they would be playing a game, but also doing some of their
+              exercises. I honestly think it was a really significant and enriching experience,
+              it allowed me to experience working with others as a team, as well as interacting with the
+              patients and physiotherapists from the hospital. I really liked the fact that I could
+              help someone with a problem and also develop a video game.
+              <br><br>
+              I decided to go full on becoming a video game developer, making games in any context
+              possible, be it just for entertainment or for a greater cause. I really believe video games
+              have a special power on people, like the ability to inspire emotions.
+            </span>
+          </mat-card-content>
+          <!--<mat-divider></mat-divider>-->
+          <!--<mat-card-actions>-->
+            <!--<a mat-button color="accent" class="text-upper">View All</a>-->
+          <!--</mat-card-actions>-->
         </mat-card>
       </div>
     </div>
@@ -168,15 +117,15 @@
         <mat-card>
           <mat-card-header>
             <mat-card-title >
-              <a href="mailto:camilo.ruiz.casanova@correounivalle.edu.co" target="_new">
-                <img mat-card-lg-image src="/assets/email.png" alt="Mail: camilo.ruiz.casanova@correounivalle.edu.co">
+              <a href="mailto:camilo.ruiz.casanova@outlook.com" target="_new">
+                <img mat-card-lg-image src="/assets/email.png" alt="Mail: camilo.ruiz.casanova@outlook.com">
               </a>
             </mat-card-title>
           </mat-card-header>
           <mat-card-content>
             <mat-list>
               <mat-list-item>
-                <a href="mailto:camilo.ruiz.casanova@correounivalle.edu.co" target="_new">camilo.ruiz.casanova@correounivalle.edu.co</a>
+                <a href="mailto:camilo.ruiz.casanova@outlook.com" target="_new">camilo.ruiz.casanova@outlook.com</a>
               </mat-list-item>
             </mat-list>
           </mat-card-content>
