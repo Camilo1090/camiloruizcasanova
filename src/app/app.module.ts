@@ -41,6 +41,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
+import {FragmentPolyfillModule} from './fragment-polyfill.module';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { BlogComponent } from './blog/blog.component';
     // BrowserModule.withServerTransition({ appId: 'camiloruizcasanova' }),
     BrowserTransferStateModule,
     AppRoutingModule,
+    FragmentPolyfillModule.forRoot({ smooth: true }),
 
     BrowserModule,
     BrowserAnimationsModule,
