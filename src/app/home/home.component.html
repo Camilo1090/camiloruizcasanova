@@ -1,17 +1,12 @@
-<section id="home" class="bgc-blue-grey-50">
-  <div layout-gt-xs="row" class="">
-      <!-- <div tdMediaToggle="gt-sm" [mediaClasses]="['push-lg']">
-        <h1 class="mat-display-1 tc-blue-A400 push-top-xs push-bottom-sm">Featured Projects</h1>
-        <h2 class="mat-headline tc-grey-800 push-top-xs push-bottom-sm">Supporting Secondary Text</h2>
-        <p class="mat-subhead tc-grey-600">Leverage agile frameworks to provide a robust synopsis for high level
-          overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall
-          value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity
-          and empowerment.</p>
-        <button mat-raised-button color="accent" class="push-bottom text-upper">Call to Action</button>
-      </div> -->
-      <video autoplay muted="true" loop id="myVideo">
-        <source src="assets/video.mp4" type="video/mp4" />
-      </video>
+<section id="home" class="">
+  <div layout-gt-xs="row" class="home--video">
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/video.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="slider-caption-top">
+    <div class="slider-caption__title">Titulo</div>
+    <div class="slider-caption__content">All content</div>
   </div>
 </section>
 
@@ -65,7 +60,7 @@
 </section>
 
 <section id="resume" class="bgc-blue-grey-50">
-  <div layout-gt-xs="row" flex-gt-xs="90">
+  <!-- <div layout-gt-xs="row" flex-gt-xs="90">
     <div flex-gt-xs="60" class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xl']">
       <div class="push-top-xl" hide-xs></div>
       <div tdMediaToggle="gt-sm" [mediaClasses]="['push-lg']">
@@ -80,7 +75,6 @@
       <div class="push-bottom-xl" hide-xs></div>
     </div>
     <div flex-gt-xs="40" class="push-xxl" layout-margin layout-align="right">
-      <!--<mat-icon class="push" style="height:auto;width:auto;" svgIcon="assets:covalent-mark"></mat-icon>-->
       <mat-card>
         <mat-toolbar color="accent" class="bgc-cyan-A700 push-bottom">
           <span class="text-upper">Last Projects</span>
@@ -98,8 +92,48 @@
         <mat-card-actions>
           <a mat-button color="accent" class="text-upper">View All</a>
         </mat-card-actions>
-        <!-- <img mat-card-image src="assets/camilo.png" /> -->
       </mat-card>
+    </div>
+  </div> -->
+  <div class="gallery items-3">
+    <div id="item-1" class="control-operator"></div>
+    <div id="item-2" class="control-operator"></div>
+    <div id="item-3" class="control-operator"></div>
+  
+    <figure class="item">
+      <video autoplay muted loop controls>
+        <source src="assets/LarryBaker.flv" type="video/flv" />
+      </video>
+      <div class="slider-caption">
+        <div class="slider-caption__title">LarryBaker</div>
+        <div class="slider-caption__content">All content</div>
+      </div>
+    </figure>
+  
+    <figure class="item">
+      <video  muted loop>
+        <source src="assets/video.mp4" type="video/mp4" />
+      </video>
+      <div class="slider-caption">
+        <div class="slider-caption__title">Titulo</div>
+        <div class="slider-caption__content">All content</div>
+      </div>
+    </figure>
+  
+    <figure class="item">
+      <video muted loop>
+        <source src="assets/video.mp4" type="video/mp4" />
+      </video>
+      <div class="slider-caption">
+        <div class="slider-caption__title">Titulo</div>
+        <div class="slider-caption__content">All content</div>
+      </div>
+    </figure>
+  
+    <div class="controls">
+      <a href="#item-1" class="control-button">•</a>
+      <a href="#item-2" class="control-button">•</a>
+      <a href="#item-3" class="control-button">•</a>
     </div>
   </div>
 </section>

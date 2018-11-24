@@ -1,9 +1,43 @@
-#home {
+.home--video {
   justify-content: space-around;
   display: flex;
   background-color: black !important;
+  height: 50vh;
 }
 
 .mat-card {
   overflow: hidden;
+}
+
+.slider-caption-top {
+  position: absolute;
+  top: 40vh;
+  background-color: rgba(216, 216, 216, 0.5);
+  width: 100%;
+  padding: 1rem 15rem;
+}
+
+.slider-caption {
+  position: absolute;
+  bottom: 10vh;
+  background-color: rgba(216, 216, 216, 0.5);
+  width: 100%;
+  padding: 1rem 15rem;
+}
+
+.slider-caption__title, .slider-caption__content {
+  color: white !important;
+  z-index: 100;
+}
+
+.slider-caption__title {
+  font-size: 1.2em;
+}
+
+.slider-caption__content {
+  font-size: 0.9em;
+}
+
+#resume {
+  height: 80vh;
 }
