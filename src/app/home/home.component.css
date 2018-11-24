@@ -1,0 +1,9 @@
+#home {
+  justify-content: space-around;
+  display: flex;
+  background-color: black !important;
+}
+
+.mat-card {
+  overflow: hidden;
+}
