@@ -1,3 +1,31 @@
-<p>
-  blog works!
-</p>
+<section id="header" tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-md', 'pad-bottom-md']">
+  <div layout-gt-xs="row" class="pad-top-md pad-right-md pad-left-md">
+    <div flex>
+      <mat-card class="pad-xl">
+        This blog is about.
+      </mat-card>
+    </div>
+  </div>
+</section>
+
+<section id="content">
+    <div layout-gt-xs="row" class="pad-left-md pad-right-md">
+      <div flex>
+        <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
+          <div class="push-bottom-md">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>Angular JS</mat-card-title>
+                <mat-card-subtitle>Minimal aspects to take into account</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at elit vitae nisi dignissim viverra. Nulla ac tellus hendrerit, consectetur felis vel, hendrerit urna. Suspendisse commodo varius ligula, eu vehicula lectus vestibulum eu. Nullam vulputate mauris nec mi varius, in mattis nulla efficitur. Pellentesque pellentesque pulvinar bibendum. Vestibulum et interdum tortor. Phasellus aliquam laoreet mi eu porttitor. Vestibulum et est cursus, sodales sem sit amet, consectetur justo. Mauris viverra lectus at arcu rhoncus, ac interdum sem vulputate. Aliquam erat volutpat. Cras sit amet tincidunt nunc, nec volutpat ligula. Donec venenatis est non lacinia feugiat. Aliquam erat volutpat. Aliquam eget dui quis augue dignissim facilisis. Maecenas finibus, ligula eget semper mollis, arcu magna luctus leo, sed ullamcorper lorem velit in neque.
+
+                  Nulla finibus bibendum elit, non ultrices ligula sagittis ut. Etiam vel nibh quis elit dignissim venenatis. Nunc auctor eros vitae tortor porttitor, sed maximus sem tincidunt. Cras eget vestibulum justo, quis consequat justo. Ut euismod finibus ligula id pharetra. Nam sed dignissim odio. Duis lobortis tempor ullamcorper. Pellentesque eget sodales tortor. Fusce ut ex enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sed tincidunt metus.
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+</section>
