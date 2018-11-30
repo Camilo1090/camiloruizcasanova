@@ -1,12 +1,43 @@
-<section id="home" class="">
-  <div layout-gt-xs="row" class="home--video">
-    <video autoplay muted loop id="myVideo">
-      <source src="assets/video1.mp4" type="video/mp4" />
-    </video>
-  </div>
-  <div class="slider-caption-top">
-    <div class="slider-caption__title">Titulo</div>
-    <div class="slider-caption__content">All content</div>
+<section id="home" class="home--video">
+  <div class="gallery items-3">
+    <div id="item-1" class="control-operator"></div>
+    <div id="item-2" class="control-operator"></div>
+    <div id="item-3" class="control-operator"></div>
+  
+    <figure class="item">
+      <video autoplay muted="true" loop controls>
+        <source src="assets/video1.mp4" type="video/mp4" />
+      </video>
+      <div class="slider-caption">
+        <div class="slider-caption__title">VR Smithy</div>
+        <div class="slider-caption__content">All content</div>
+      </div>
+    </figure>
+  
+    <figure class="item">
+      <video muted="true" loop controls>
+        <source src="assets/video2.mp4" type="video/mp4" />
+      </video>
+      <div class="slider-caption">
+        <div class="slider-caption__title">Larry Baker</div>
+        <div class="slider-caption__content">All content</div>
+      </div>
+    </figure>
+  
+    <figure class="item">
+      <video muted="true" loop controls>
+        <source src="assets/video3.mp4" type="video/mp4" />
+      </video>
+      <div class="slider-caption">
+        <div class="slider-caption__title">Corridore Ristorante</div>
+        <div class="slider-caption__content">All content</div>
+      </div>
+    </figure>
+    <div class="controls">
+      <a href="#item-1" class="control-button">•</a>
+      <a href="#item-2" class="control-button">•</a>
+      <a href="#item-3" class="control-button">•</a>
+    </div>
   </div>
 </section>
 
@@ -60,7 +91,7 @@
 </section>
 
 <section id="resume" class="bgc-blue-grey-50">
-  <!-- <div layout-gt-xs="row" flex-gt-xs="90">
+  <div layout-gt-xs="row" flex-gt-xs="90">
     <div flex-gt-xs="60" class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xl']">
       <div class="push-top-xl" hide-xs></div>
       <div tdMediaToggle="gt-sm" [mediaClasses]="['push-lg']">
@@ -74,7 +105,7 @@
       </div>
       <div class="push-bottom-xl" hide-xs></div>
     </div>
-    <div flex-gt-xs="40" class="push-xxl" layout-margin layout-align="right">
+    <!-- <div flex-gt-xs="40" class="push-xxl" layout-margin layout-align="right">
       <mat-card>
         <mat-toolbar color="accent" class="bgc-cyan-A700 push-bottom">
           <span class="text-upper">Last Projects</span>
@@ -93,49 +124,9 @@
           <a mat-button color="accent" class="text-upper">View All</a>
         </mat-card-actions>
       </mat-card>
-    </div>
-  </div> -->
-  <div class="gallery items-3">
-    <div id="item-1" class="control-operator"></div>
-    <div id="item-2" class="control-operator"></div>
-    <div id="item-3" class="control-operator"></div>
-  
-    <figure class="item">
-      <video autoplay muted="true" loop controls>
-        <source src="assets/video1.mp4" type="video/mp4" />
-      </video>
-      <div class="slider-caption">
-        <div class="slider-caption__title">VR Smithy</div>
-        <div class="slider-caption__content">All content</div>
-      </div>
-    </figure>
-  
-    <figure class="item">
-      <video muted="true" loop controls>
-        <source src="assets/video2.mp4" type="video/mp4" />
-      </video>
-      <div class="slider-caption">
-        <div class="slider-caption__title">Larry Baker</div>
-        <div class="slider-caption__content">All content</div>
-      </div>
-    </figure>
-  
-    <figure class="item">
-      <video muted="true" loop controls>
-        <source src="assets/video3.mp4" type="video/mp4" />
-      </video>
-      <div class="slider-caption">
-        <div class="slider-caption__title">Corridore Ristorante</div>
-        <div class="slider-caption__content">All content</div>
-      </div>
-    </figure>
-  
-    <div class="controls">
-      <a href="#item-1" class="control-button">•</a>
-      <a href="#item-2" class="control-button">•</a>
-      <a href="#item-3" class="control-button">•</a>
-    </div>
+    </div> -->
   </div>
+  
 </section>
 
 <section id="contact" class="bgc-blue-grey-100" tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-xl', 'pad-bottom-xl']">

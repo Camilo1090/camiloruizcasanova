@@ -1,8 +1,17 @@
 .home--video {
-  justify-content: space-around;
-  display: flex;
+  /* justify-content: space-around;
+  display: flex; */
   background-color: black !important;
   height: 50vh;
+}
+
+.controls {
+  height: 2rem;
+  bottom: 1rem;
+}
+
+video {
+  height: 100% !important;
 }
 
 .mat-card {
@@ -19,7 +28,7 @@
 
 .slider-caption {
   position: absolute;
-  bottom: 10vh;
+  bottom: 3.5rem;
   background-color: rgba(216, 216, 216, 0.5);
   width: 100%;
   padding: 1rem 15rem;
