@@ -1,7 +1,7 @@
 <section id="header" tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-md', 'pad-bottom-md']">
   <div layout-gt-xs="row" class="pad-top-md pad-right-md pad-left-md">
     <div flex>
-      <mat-card class="pad-xl">
+      <mat-card class="pad-xl mat-title">
         This blog is about.
       </mat-card>
     </div>
@@ -15,7 +15,9 @@
           <div class="push-bottom-md">
             <mat-card>
               <mat-card-header>
-                <mat-card-title>Angular JS</mat-card-title>
+                <mat-card-title>
+                  <h1 class="tc-blue-A400">Angular JS</h1>
+                </mat-card-title>
                 <mat-card-subtitle>Minimal aspects to take into account</mat-card-subtitle>
               </mat-card-header>
               <mat-card-content>
@@ -30,14 +32,19 @@
       <div flex="30">
         <mat-card>
           <mat-card-header>
-            <mat-card-title>Last publications</mat-card-title>
+            <mat-card-title>
+              <h2 class="mat-title">Last publications</h2>
+            </mat-card-title>
           </mat-card-header>
           <mat-card-content>
-              <li>Test</li>
-              <li>Test 2</li>
-              <li>Test 3</li>
-              <li>Test 4</li>
-              <li>Test 5</li>
+            <mat-list>
+              <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
+                <mat-list-item>
+                  <mat-icon mat-list-icon class="fill-grey-700">description</mat-icon>
+                  <h4 matLine>Publication</h4>
+                </mat-list-item>
+              </ng-template>
+            </mat-list>
           </mat-card-content>
         </mat-card>
       </div>
