@@ -18,7 +18,7 @@
         <mat-icon>person_pin</mat-icon>
         Contact
       </a>
-      <a mat-list-item routerLink="/blog" (click)="closeDrawer()">
+      <a mat-list-item href="https://camiloruizcasanova.home.blog/" (click)="closeDrawer()">
         <mat-icon>chat</mat-icon>
         Blog
       </a>
@@ -34,7 +34,7 @@
       <mat-icon>menu</mat-icon>
     </button>
     <div td-toolbar-content layout="row" layout-align="start center" flex>
-      <span class="tc-blue-500 mat-subhead">{{name}}</span>
+      <span class="tc-red-600 mat-subhead">{{name}}</span>
       <!--<span hide-gt-xs class="tc-blue-500 mat-subhead">{{name}}</span>-->
       <!--<span hide-xs class="tc-blue-500 mat-subhead">{{name}}</span>-->
       <!--<mat-toolbar>-->
@@ -60,7 +60,7 @@
           <span hide-xs hide-sm>Contact</span>
           <!--<span hide-gt-sm layout="column" layout-align="center center"><mat-icon>person_pin</mat-icon></span>-->
         </a>
-         <a mat-button [routerLink]="'/blog'" [style.min-width]="0">
+         <a mat-button href="https://camiloruizcasanova.home.blog/" [style.min-width]="0">
            <mat-icon hide-xs class="pad-right-lg">chat</mat-icon>
            <span hide-xs hide-sm>Blog</span>
           <span hide-gt-sm layout="column" layout-align="center center"><mat-icon>chat</mat-icon></span>
